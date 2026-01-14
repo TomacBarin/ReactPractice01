@@ -12,13 +12,24 @@ function App() {
       <ProfileCard 
         name="Tomac Barin" 
         title="Fullstack-tjosan!" 
-        description="Min katt heter Mittens!!" 
+        description="Min katt heter Mittens." 
         imageUrl="https://via.placeholder.com/120?text=Tomac" 
       />
       <ProfileCard 
         name="Anna K" 
         title="Frontend-tjosan!" 
-        description="Min mitt heter Kattens!" 
+        description="Min mitt heter Kattens." 
+      />
+      <ProfileCard 
+        name="Harald Hansson" 
+        title="Fängelsedirektör" 
+        description="Den första gång jag såg dig." 
+      />
+      <ProfileCard 
+        name="Hasse Alfresson" 
+        title="Biljettförsäljare på Skansen" 
+        description='...det var en sommdag.'
+        
       />
     </div>
     </div>
