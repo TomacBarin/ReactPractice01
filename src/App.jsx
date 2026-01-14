@@ -1,7 +1,14 @@
 import './App.css'
-import ProfileCard from './Components/ProfileCard.jsx'
+import ProfileCard from './Components/ProfileCard'
+import ProductList from './Components/ProductList';
 
 function App() {
+  const products = [
+    { id: 1, name: 'Gaming Laptop', price: 14995, category: 'Elektronik', inStock: true },
+    { id: 2, name: 'React-bok (begagnad)', price: 199, category: 'Böcker', inStock: false },
+    { id: 3, name: 'Kaffekopp med React-logo', price: 79, category: 'Merch', inStock: true },
+    { id: 4, name: 'Extra batteri', price: 499, category: 'Tillbehör', inStock: true }
+  ];
   return (
     <div className="App">
       <h1 style={{ color: 'hotpink' }}>Mitt första React-test.</h1>
@@ -32,6 +39,8 @@ function App() {
         
       />
     </div>
+    <h2 style={{ color: '#61dafb', textAlign: 'center', marginTop: '40px' }}>Produkter i lager</h2>
+<ProductList products={products} />
     </div>
   )
 }
