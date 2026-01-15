@@ -1,7 +1,8 @@
 import './App.css';
-import ProfileCard from './Components/ProfileCard';
-import ProductList from './Components/ProductList';
-import Card from './Components/Card';
+import ProfileCard from './Components/ProfileCard.jsx';
+import ProductList from './Components/ProductList.jsx';
+import Card from './Components/Card.jsx';
+import Navigation from './Components/Navigation.jsx';
 
 function App() {
   const products = [
@@ -13,8 +14,21 @@ function App() {
     { id: 6, name: 'Röd cykel', price: 129, category: 'Tillbehör', inStock: false }
   ];
 
+  const navLinks = [
+    { label: "Hem", url: "/" },
+    { label: "Produkter", url: "/produkter" },
+    { label: "Profil", url: "/profil" },
+    { label: "Kontakt", url: "/kontakt" },
+  ];
+
   return (
     <div className="App">
+
+      <Navigation 
+        links={navLinks} 
+        activeUrl="/"   // ← Byt till "/produkter", "/profil" etc för att testa aktiv stil
+      />
+
       <h1 style={{ color: 'hotpink' }}>React-tjosan!</h1>
       
       <p>Detta är en cykelvante:</p>
